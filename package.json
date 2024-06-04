@@ -16,9 +16,9 @@
     "@mui/material": "^5.15.19",
     "add": "^2.0.6",
     "geist": "^1.2.2",
-    "mui-player": "^1.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-player": "^2.16.0",
     "tss-react": "^4.9.10",
     "yarn": "^1.22.22"
   },
