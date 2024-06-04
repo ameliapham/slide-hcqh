@@ -17,7 +17,7 @@
     "geist": "^1.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tss-react": "^4.9.4"
+    "tss-react": "^4.9.10"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",

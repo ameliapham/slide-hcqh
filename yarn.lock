@@ -2020,10 +2020,10 @@ ts-api-utils@^1.0.1:
   resolved "https://registry.yarnpkg.com/ts-api-utils/-/ts-api-utils-1.2.1.tgz#f716c7e027494629485b21c0df6180f4d08f5e8b"
   integrity sha512-RIYA36cJn2WiH9Hy77hdF9r7oEwxAtB/TS9/S4Qd90Ap4z5FSiin5zEiTL44OII1Y3IIlEvxwxFUVgrHSZ/UpA==
 
-tss-react@^4.9.4:
-  version "4.9.4"
-  resolved "https://registry.yarnpkg.com/tss-react/-/tss-react-4.9.4.tgz#037603ed2f8765c2f208ac1c75e9293753aa18cd"
-  integrity sha512-4o+XFdaTcraNEIsCRxKiEX7g6xhcsdSxfHRjos3Kg9GbYIpzfK4M2MHMETTuXT54nUrldtnkipNC003v/q5KVg==
+tss-react@^4.9.10:
+  version "4.9.10"
+  resolved "https://registry.yarnpkg.com/tss-react/-/tss-react-4.9.10.tgz#287392f4459116ac83c51fc117fad138ac06f139"
+  integrity sha512-uQj+r8mOKy0tv+/GAIzViVG81w/WeTCOF7tjsDyNjlicnWbxtssYwTvVjWT4lhWh5FSznDRy6RFp0BDdoLbxyg==
   dependencies:
     "@emotion/cache" "*"
     "@emotion/serialize" "*"
