@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback } from "react";
+import { createContext, useContext, useState, useCallback, useEffect } from "react";
 
 
 type FullscreenContextType = {
@@ -50,6 +50,30 @@ export function FullscreenProvider(props: FullscreenProviderProps) {
             document.msExitFullscreen().then(() => setIsFullscreen(false));
         }
     }, []);
+
+    const handleFullscreenChange = useCallback(() => {
+        const isFullscreenNow = Boolean(
+          document.fullscreenElement ||
+          (document as any).webkitFullscreenElement ||
+          (document as any).mozFullScreenElement ||
+          (document as any).msFullscreenElement
+        );
+        setIsFullscreen(isFullscreenNow);
+      }, []);
+    
+      useEffect(() => {
+        document.addEventListener('fullscreenchange', handleFullscreenChange);
+        document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+        document.addEventListener('mozfullscreenchange', handleFullscreenChange);
+        document.addEventListener('MSFullscreenChange', handleFullscreenChange);
+    
+        return () => {
+          document.removeEventListener('fullscreenchange', handleFullscreenChange);
+          document.removeEventListener('webkitfullscreenchange', handleFullscreenChange);
+          document.removeEventListener('mozfullscreenchange', handleFullscreenChange);
+          document.removeEventListener('MSFullscreenChange', handleFullscreenChange);
+        };
+      }, [handleFullscreenChange]);
 
     return (
         <FullscreenContext.Provider value={{ isFullscreen, enterFullscreen, exitFullscreen }}>
