@@ -1,23 +1,23 @@
 import { tss } from "tss-react/mui"
 import { ImageCustom } from "shared/ImageCustom";
-import chauVanBG from "assets/images/chauVan.jpg";
-import coDoiThuongNganMp3 from "assets/sounds/coDoiThuongNganKar.mp3";
+import viDam from "assets/images/viDam.jpeg";
+import muaViDamMp3 from "assets/sounds/muaViDam.mp3";
 
-export function ChauVan() {
+export function MuaViDam() {
 
     const { classes } = useStyle();
 
     return (
-        <ImageCustom imageSrc={chauVanBG}>
+        <ImageCustom imageSrc={viDam}>
             <audio controls className={classes.audio}>
-                <source src={coDoiThuongNganMp3} type="audio/mpeg" />
+                <source src={muaViDamMp3} type="audio/mpeg" />
             </audio>
         </ImageCustom>
     );
 }
 
 const useStyle = tss
-    .withName({ChauVan})
+    .withName({MuaViDam})
     .create(() => ({
         "audio": {
             "position": "absolute",
