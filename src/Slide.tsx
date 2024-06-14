@@ -1,8 +1,8 @@
 import { tss } from "tss-react/mui";
 import { useState } from 'react';
 import IconButton from '@mui/material/IconButton';
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+//import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+//import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 import ReactPlayer from 'react-player'
@@ -78,14 +78,12 @@ export function Slide(props: SlideProps) {
                     className={cx(classes.button)}
                     onClick={goToPreviousImage}
                 >
-                    <ArrowBackIosNewIcon />
                 </IconButton>
 
                 <IconButton
                     className={cx(classes.button)}
                     onClick={goToNextImage}
                 >
-                    <ArrowForwardIosIcon />
                 </IconButton>
             </div>
         </>
@@ -115,7 +113,7 @@ const useStyles = tss
             "button": {
                 "position": "absolute",
                 "top": "0",
-                //"justifyContent": "center",
+                "justifyContent": "center",
                 "width": "150px",
                 "height": "80%",
                 "padding": "0",
